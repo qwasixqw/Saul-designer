@@ -1,0 +1,159 @@
+.application {
+	position: relative;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 80px;
+		right: 620px;
+		background-image: url("../../img/section-4/keyboard.svg");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		width: 153px;
+		height: 116px;
+		z-index: -1;
+	}
+
+	&__wrap {
+		padding: 258px 0;
+	}
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__item-title {
+		position: relative;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 165px;
+			left: 10px;
+			background-image: url("../../img/section-4/up.svg");
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			width: 454px;
+			height: 365px;
+			z-index: -1;
+		}
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: 64px;
+		line-height: 125%;
+
+		span {
+			color: $color-blue;
+		}
+	}
+
+	&__item-form {
+		position: relative;
+
+		&::before {
+			content: "";
+			position: absolute;
+			bottom: -100px;
+			right: 85px;
+			background-image: url("../../img/section-4/mail.svg");
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			width: 75px;
+			height: 72px;
+			z-index: -1;
+		}
+	}
+
+	&__form {
+	}
+}
+
+.form {
+	&__row {
+		display: flex;
+		gap: 24px;
+	}
+
+	&__input {
+		input {
+			background: rgba(57, 62, 70, 0.5);
+			border-radius: 16px;
+			padding: 16px 0px 16px 24px;
+			width: 288px;
+			font-weight: 700;
+			font-size: 18px;
+		}
+
+		label {
+			display: block;
+			margin-bottom: 10px;
+			font-weight: 700;
+			font-size: 18px;
+		}
+	}
+
+	&__input-text {
+	}
+
+	&__input-email {
+	}
+
+	&__textarea {
+		margin-top: 24px;
+
+		label {
+			display: block;
+			margin-bottom: 10px;
+			font-weight: 700;
+			font-size: 18px;
+		}
+
+		textarea {
+			background: rgba(57, 62, 70, 0.5);
+			border-radius: 16px;
+			padding: 16px 16px 16px 24px;
+			width: 288px;
+			font-weight: 700;
+			font-size: 18px;
+			width: 600px;
+			height: 280px;
+			resize: none;
+		}
+	}
+
+	&__button {
+		margin-top: 24px;
+		position: relative;
+		background: $color-blue;
+		padding: 10px 66px 10px 32px;
+		color: $color-white;
+		border-radius: 24px;
+		font-weight: 700;
+		font-size: 18px;
+		text-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			transform: translateY(-45%);
+			right: 34px;
+			background-image: url("../../img/section-4/send.svg");
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			width: 24px;
+			height: 24px;
+		}
+
+		&:active {
+			transform: translateY(3px);
+		}
+	}
+}

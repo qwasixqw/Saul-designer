@@ -40,7 +40,7 @@
 	}
 
 	&__block {
-		display: flex;
+		display: none;
 		align-items: center;
 		justify-content: space-between;
 	}
@@ -87,4 +87,8 @@
 }
 .active {
 	background-color: $color-blue;
+}
+
+.active__block {
+	display: flex;
 }
